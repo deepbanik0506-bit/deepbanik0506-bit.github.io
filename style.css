@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
                  "Segoe UI", Roboto, sans-serif;
@@ -13,31 +17,25 @@ body {
     color: #e5e7eb;
     line-height: 1.6;
 }
-html {
-    scroll-behavior: smooth;
-}
-
 
 section {
-    padding: 60px 10%;
+    padding: 70px 10%;
 }
-
 
 /* ===== HERO SECTION ===== */
 
 .hero {
-    min-height: 85vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 30px;
 }
 
 .hero-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 80px;
+    gap: 100px;
     width: 100%;
     max-width: 1200px;
 }
@@ -48,44 +46,40 @@ section {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;   
-    text-align: center;    
+    align-items: center;
+    text-align: center;
 }
 
 /* Image */
 
 .hero-image img {
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 24px;
     margin-bottom: 25px;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6);
 }
-
 
 /* Name */
 
 .hero-name {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     font-weight: 600;
     letter-spacing: -0.5px;
 }
-
-
-
 
 /* RIGHT SIDE */
 
 .hero-right {
     flex: 1;
-    max-width: 480px;
+    max-width: 500px;
 }
 
 .hero-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #9ca3af;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .hero-description {
@@ -107,7 +101,7 @@ section {
 
 .hero-stats {
     display: flex;
-    gap: 40px;
+    gap: 50px;
     margin-bottom: 30px;
 }
 
@@ -118,44 +112,36 @@ section {
 
 .hero-stats strong {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #ffffff;
+}
+
+/* Connect label */
+
+.connect-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
 }
 
 /* Contact links */
 
 .hero-links {
     display: flex;
-    gap: 25px;
-    margin-bottom: 30px;
-}
-/* Connect label */
-
-.connect-label {
-    font-size: 0.85rem;
-    color: #6b7280;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
-/* Improve spacing of links */
-
-.hero-links {
-    display: flex;
-    gap: 30px;
+    gap: 28px;
     margin-bottom: 35px;
 }
+
 .hero-links span {
     color: #9ca3af;
     font-size: 0.95rem;
 }
 
-
-/* Slight hover refinement */
-
 .hero-links a {
-    color: #cfd3dc;
+    color: #c9ccd4;
+    text-decoration: none;
     font-size: 0.95rem;
     transition: all 0.25s ease;
 }
@@ -165,23 +151,11 @@ section {
     transform: translateY(-2px);
 }
 
-
-.hero-links a {
-    color: #c9ccd4;   /* muted neutral */
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
-}
-
-.hero-links a:hover {
-    color: #ffffff;
-}
-
 /* Button */
 
 .hero-btn {
     display: inline-block;
-    padding: 12px 28px;
+    padding: 12px 30px;
     border-radius: 30px;
     border: 1px solid #2a2d34;
     text-decoration: none;
@@ -192,12 +166,13 @@ section {
 
 .hero-btn:hover {
     background: #1a1c22;
+    border-color: #3a3f47;
 }
 
 /* ===== ABOUT SECTION ===== */
 
 .about {
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .about h2 {
@@ -209,63 +184,83 @@ section {
     max-width: 750px;
     color: #b0b3b8;
     margin-bottom: 20px;
+    line-height: 1.7;
 }
 
-/* ===== PROJECTS SECTION ===== */
+/* ===== PROJECT SECTION BOARD ===== */
 
 .projects {
-    max-width: 1300px;      /* controls board width */
-    margin: 80px auto;      /* centers horizontally */
-    padding: 60px 60px;     /* inner spacing */
+    max-width: 1200px;
+    margin: 60px auto 90px;
+    padding: 50px;
 
-    background: linear-gradient(180deg, #15171c, #111318);
-    border-radius: 30px;
-    border: 1px solid #1f2229;
+    background: linear-gradient(180deg, #16181d, #121418);
+    border-radius: 28px;
+    border: 1px solid #1e2228;
 
-    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(255,255,255,0.03);
 }
-
-
 
 .projects h2 {
     font-size: 2rem;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
 }
 
+/* ===== PROJECT CARD ===== */
+
 .project-card {
-    background-color: #15171c;
+    background: #15171c;
     border: 1px solid #1f2229;
     border-radius: 20px;
     overflow: hidden;
-    margin-bottom: 40px;
-    transition: all 0.3s ease;
+    margin-bottom: 35px;
+    transition: all 0.35s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
     border-color: #2c2f36;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
 }
+
+/* Image */
 
 .project-image img {
     width: 100%;
-    height: 220px;
+    height: 230px;
     object-fit: cover;
     display: block;
+    transition: transform 0.4s ease;
 }
 
+.project-card:hover .project-image img {
+    transform: scale(1.04);
+}
+
+/* Text */
+
 .project-card h3 {
-    font-size: 1.5rem;
-    margin: 25px 30px 10px 30px;
+    font-size: 1.4rem;
+    margin: 25px 30px 12px;
+    font-weight: 600;
 }
 
 .project-card p {
-    margin: 0 30px 20px 30px;
+    margin: 0 30px 22px;
     color: #9ca3af;
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
+
+/* Button */
 
 .project-card a {
     display: inline-block;
-    margin: 0 30px 30px 30px;
+    margin: 0 30px 30px;
     padding: 10px 22px;
     font-size: 0.9rem;
     text-decoration: none;
@@ -277,6 +272,7 @@ section {
 
 .project-card a:hover {
     background: #1a1c22;
+    border-color: #3a3f47;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -286,17 +282,11 @@ section {
     .hero-container {
         flex-direction: column;
         text-align: center;
+        gap: 60px;
     }
 
-    .hero-left h1 {
-        font-size: 3rem;
-    }
-
+    .hero-stats,
     .hero-links {
-        justify-content: center;
-    }
-
-    .hero-stats {
         justify-content: center;
     }
 
