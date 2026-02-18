@@ -1,0 +1,303 @@
+/* ===== GLOBAL ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+                 "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(180deg, #0f1115 0%, #0c0d10 100%);
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+section {
+    padding: 60px 10%;
+}
+
+
+/* ===== HERO SECTION ===== */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* LEFT SIDE */
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    text-align: center;    
+}
+
+/* Image */
+
+.hero-image img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Name */
+
+.hero-name {
+    font-size: 2.6rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+
+
+
+/* RIGHT SIDE */
+
+.hero-right {
+    flex: 1;
+    max-width: 480px;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    color: #9ca3af;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 1rem;
+    color: #b0b3b8;
+    margin-bottom: 25px;
+}
+
+/* divider line */
+
+.hero-divider {
+    height: 1px;
+    width: 100%;
+    background: #1f2229;
+    margin: 25px 0;
+}
+
+/* Stats row */
+
+.hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.hero-stats div {
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+.hero-stats strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Contact links */
+
+.hero-links {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+/* Connect label */
+
+.connect-label {
+    font-size: 0.85rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Improve spacing of links */
+
+.hero-links {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+.hero-links span {
+    color: #9ca3af;
+    font-size: 0.95rem;
+}
+
+
+/* Slight hover refinement */
+
+.hero-links a {
+    color: #cfd3dc;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+}
+
+.hero-links a:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+.hero-links a {
+    color: #c9ccd4;   /* muted neutral */
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.hero-links a:hover {
+    color: #ffffff;
+}
+
+/* Button */
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: 1px solid #2a2d34;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: #1a1c22;
+}
+
+/* ===== ABOUT SECTION ===== */
+
+.about {
+    padding-top: 60px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 750px;
+    color: #b0b3b8;
+    margin-bottom: 20px;
+}
+
+/* ===== PROJECTS SECTION ===== */
+
+.projects {
+    max-width: 1300px;      /* controls board width */
+    margin: 80px auto;      /* centers horizontally */
+    padding: 60px 60px;     /* inner spacing */
+
+    background: linear-gradient(180deg, #15171c, #111318);
+    border-radius: 30px;
+    border: 1px solid #1f2229;
+
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+}
+
+
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    background-color: #15171c;
+    border: 1px solid #1f2229;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #2c2f36;
+}
+
+.project-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin: 25px 30px 10px 30px;
+}
+
+.project-card p {
+    margin: 0 30px 20px 30px;
+    color: #9ca3af;
+}
+
+.project-card a {
+    display: inline-block;
+    margin: 0 30px 30px 30px;
+    padding: 10px 22px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border: 1px solid #2a2d34;
+    border-radius: 30px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.project-card a:hover {
+    background: #1a1c22;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left h1 {
+        font-size: 3rem;
+    }
+
+    .hero-links {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
+    }
+
+}
