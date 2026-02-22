@@ -62,12 +62,11 @@ section {
 /* Image */
 
 .hero-image img {
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 380px;
     object-fit: cover;
-    border-radius: 24px;
-    margin-bottom: 25px;
-    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6);
+    object-position: 40% center;
+    border-radius: 20px;
 }
 
 /* Name */
