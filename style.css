@@ -19,16 +19,13 @@ body {
 }
 
 section {
-    padding: 70px 10%;
+    padding: 60px 10%;
 }
 
 /* ===== HERO SECTION ===== */
 
 .hero {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 80px 10% 40px 10%;
 }
 
 .hero-container {
@@ -172,7 +169,7 @@ section {
 /* ===== ABOUT SECTION ===== */
 
 .about {
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .about h2 {
