@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
-                 "Segoe UI", Roboto, sans-serif;
+        "Segoe UI", Roboto, sans-serif;
     background: linear-gradient(180deg, #0f1115 0%, #0c0d10 100%);
     color: #e5e7eb;
     line-height: 1.6;
@@ -37,7 +37,7 @@ section {
 
     box-shadow:
         0 20px 60px rgba(0, 0, 0, 0.5),
-        inset 0 1px 0 rgba(255,255,255,0.03);
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
 .hero-container {
@@ -75,6 +75,7 @@ section {
     font-size: 2.4rem;
     font-weight: 600;
     letter-spacing: -0.5px;
+    margin-top: 24px;
 }
 
 /* RIGHT SIDE */
@@ -85,13 +86,13 @@ section {
 }
 
 .hero-subtitle {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     color: #9ca3af;
     margin-bottom: 15px;
 }
 
 .hero-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #b0b3b8;
     margin-bottom: 25px;
 }
@@ -144,13 +145,13 @@ section {
 
 .hero-links span {
     color: #9ca3af;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
 }
 
 .hero-links a {
     color: #c9ccd4;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     transition: all 0.25s ease;
 }
 
@@ -168,7 +169,7 @@ section {
     border: 1px solid #2a2d34;
     text-decoration: none;
     color: #ffffff;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     transition: all 0.3s ease;
 }
 
@@ -182,8 +183,10 @@ section {
 
 .about {
     max-width: 1200px;
-    margin: 50px auto;      /* equal top & bottom */
-    padding: 50px 50px;     /* equal internal spacing */
+    margin: 50px auto;
+    /* equal top & bottom */
+    padding: 50px 50px;
+    /* equal internal spacing */
     border-top: 1px solid #1f2229;
     border-bottom: 1px solid #1f2229;
 }
@@ -217,7 +220,7 @@ section {
 
     box-shadow:
         0 25px 80px rgba(0, 0, 0, 0.55),
-        inset 0 1px 0 rgba(255,255,255,0.03);
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
 .projects h2 {
@@ -241,7 +244,7 @@ section {
 .project-card:hover {
     transform: translateY(-6px);
     border-color: #2c2f36;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
 /* Image */
@@ -308,6 +311,7 @@ section {
     }
 
 }
+
 /* ===== NAVBAR ===== */
 
 .navbar {
@@ -321,11 +325,12 @@ section {
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
 
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 
     box-shadow:
-        0 5px 30px rgba(0,0,0,0.4),
-        0 0 40px rgba(59,130,246,0.06);  /* subtle glow */
+        0 5px 30px rgba(0, 0, 0, 0.4),
+        0 0 40px rgba(59, 130, 246, 0.06);
+    /* subtle glow */
 }
 
 .nav-container {
